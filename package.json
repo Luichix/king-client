@@ -2,57 +2,19 @@
   "name": "king-client",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.26.1",
-    "babel-plugin-react-css-modules": "^5.2.6",
-    "firebase": "^9.6.9",
-    "prop-types": "^15.8.1",
-    "react": "^17.0.2",
-    "react-chatbot-kit": "^2.0.1",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "^5.0.0",
-    "react-scroll": "^1.8.6",
-    "redux": "^4.1.2",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server -p3001 --watch db.json",
-    "eslint": "eslint . --fix",
-    "saved": "git add . && git commit -m build && git push origin main",
-    "deploy": "npm run build && firebase deploy --only hosting"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "cypress": "^9.5.2",
-    "deep-freeze": "^0.0.1",
-    "eslint-plugin-jest": "^26.1.1",
-    "json-server": "^0.17.0"
-  },
-  "proxy": "http://localhost:3001"
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6"
+  }
 }
