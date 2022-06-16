@@ -1,9 +1,7 @@
-@import '../App.css';
-
 .sidenav {
   background-color: var(--color-primary);
   position: fixed;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -18,7 +16,7 @@
 
 .none {
   position: fixed;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -35,7 +33,6 @@
   object-fit: contain;
   max-width: 250px;
 }
-
 
 .item {
   text-decoration: none;

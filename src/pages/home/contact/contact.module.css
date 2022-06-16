@@ -1,13 +1,17 @@
-@import '../App.css';
-
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:auto;
+  height: auto;
   padding: 5em 0;
   width: 100%;
-  background:linear-gradient( 160deg , var(--color-yellow), white 20%, white 80%,var(--color-yellow));
+  background: linear-gradient(
+    160deg,
+    var(--color-yellow),
+    white 20%,
+    white 80%,
+    var(--color-yellow)
+  );
 }
 
 .title {
@@ -37,32 +41,34 @@
   font-weight: 500;
 }
 
-.data input, textarea {
+.data input,
+textarea {
   width: 300px;
   padding: 1em;
   font-size: var(--text-min);
   margin: 0 0 1em 0;
-  border:  1px solid transparent;
+  border: 1px solid transparent;
   border-right: 3px solid var(--color-yellow);
   border-bottom: 1px solid var(--color-secundary);
   outline: none;
   text-indent: 0.5em;
   color: var(--color-secundary);
   resize: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .data textarea {
   height: 125px;
 }
 
-.data input:hover, textarea:hover {
+.data input:hover,
+textarea:hover {
   border: 0.5px solid var(--color-yellow);
   font-weight: 700;
 }
 
-.data input:focus, textarea:focus {
+.data input:focus,
+textarea:focus {
   border: 0.5px solid var(--color-yellow);
   font-weight: 700;
 }

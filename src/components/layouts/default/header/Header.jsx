@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import style from '../css/module/header.module.css'
+import style from './header.module.css'
+import Sydenav from '../sidenav'
 import { FaBars } from 'react-icons/fa'
 import { VscChromeClose } from 'react-icons/vsc'
-
-import Sydenav from '../sidenav/Sidenav'
 
 function Header() {
   const [nav, setNav] = useState(false)

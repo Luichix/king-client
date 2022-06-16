@@ -1,15 +1,16 @@
 import React from 'react'
-import style from '../css/module/sidenav.module.css'
+import style from './sidenav.module.css'
 import { Link as Nav } from 'react-scroll'
-import logo from '../assets/logo.png'
-import Social from '../../../Social'
+import logo from 'logo.png'
+import Social from '../../social'
+import Image from 'next/image'
 
 const elements = ['Inicio', 'Nosotros', 'Productos', 'Contacto']
 
 const Sidenav = ({ nav }) => {
   return (
     <div className={nav ? style.sidenav : style.none}>
-      <img
+      <Image
         src={logo}
         className={style.logo}
         alt="logo delicias de quesos el rey"

@@ -1,6 +1,6 @@
 import React from 'react'
-import style from '../css/module/welcome.module.css'
-import { Link } from 'react-router-dom'
+import style from './welcome.module.css'
+import Link from 'next/link'
 import { MdAccessTimeFilled } from 'react-icons/md'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BsTelephoneFill } from 'react-icons/bs'
@@ -18,8 +18,8 @@ function Home({ data }) {
       <p className={style.comment}>{data.comment}</p>
       <span className={style.store}>
         <b>
-          <Link to="/store" className={style.link}>
-            {data.store}
+          <Link href="/store">
+            <a className={style.link}>{data.store}</a>
           </Link>
         </b>
       </span>
