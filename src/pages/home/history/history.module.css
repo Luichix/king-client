@@ -1,0 +1,58 @@
+@import '../App.css';
+
+.section {
+  background:linear-gradient( 160deg , var(--color-yellow), white 20%, white 80%,var(--color-yellow));
+}
+
+.gallery {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-template-rows: repeat(auto-fit, minmax(350px,1fr));
+  max-width: 80%;
+  padding: 5em 0;
+  
+}
+
+.figure {
+  align-self: center;
+  position: relative;
+  max-width: 350px;
+}
+
+.imagen {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 6px 6px 6px #0004;
+  border: var(--color-primary) 1px solid;
+  filter: contrast(1.5) brightness(1) saturate(1) sepia(0);
+}
+
+.history {
+  background:linear-gradient( 315deg , var(--color-yellow), white 50%, var(--color-primary));
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10%;
+  box-shadow: 6px 6px 6px #0004;
+}
+
+.title {
+  color: var(--color-secundary);
+  font-size: var(--text-max);
+  padding: 1em;
+  margin: 0;
+  text-decoration: underline dashed var(--color-yellow) 5px;
+}
+
+.data {
+  color: var(--color-secundary);
+  font-size: var(--text-bot);
+  line-height: 2em;
+  padding: 1em 3em;
+  font-weight: 500;
+}

@@ -1,0 +1,42 @@
+{
+    "es": {
+      "note": "¡Recuerda pasar chequeando la tienda!",
+      "welcome": "¡Bienvenidos!",
+      "comment": "Es un placer que estes aqui, hemos creado esta pagina para que podamos conocernos mejor, mira todo lo que gustes!!!",
+      "store": "Ir a la Tienda",
+      "info": [
+        [
+          "Nuestro horario",
+          "Lunes - Sabado: 7am - 7pm"
+        ],
+        [
+          "Nuestra dirección",
+          "DDF Hotel Glomar 3 1/2 al sur"
+        ],
+        [
+          "Para pedidos",
+          "Llamar: 8380-3600"
+        ]
+      ]
+    },
+    "en": {
+      "note": "Remember to check the store!",
+      "welcome": "Welcome!",
+      "comment": "It is a pleasure to be here, we have created this page to meet you better, look at everything you want!!!",
+      "store": "Go to the Store",
+      "info": [
+        [
+          "Our schedule",
+          "Monday - Saturday: 7am - 7pm"
+        ],
+        [
+          "Our address",
+          "DDF Hotel Glomar 3 1/2 south"
+        ],
+        [
+          "For orders",
+          "Call: 8380-3600"
+        ]
+      ]
+    }
+  }

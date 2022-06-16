@@ -1,0 +1,64 @@
+@import '../App.css';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  padding: 5em 0;
+  background:linear-gradient( 200deg , var(--color-yellow), white 20%, white 80%, var(--color-yellow));
+}
+
+.title {
+  font-size: var(--text-max);
+  color: var(--color-yellow);
+  align-self: stretch;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  padding: 2em 0;
+  border-radius: 5%;
+}
+
+.data {
+  line-height: 2em;
+}
+
+.data h3 {
+  color: var(--color-yellow);
+  font-size: var(--text-max);
+}
+
+.data p {
+  padding-bottom: 1em;
+}
+
+.queso {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25%;
+  border-bottom: 5px solid var(--color-yellow);
+  border-right: 5px solid var(--color-yellow);
+}
+
+.link{
+  text-decoration: none;
+  color: var(--color-yellow);
+  background-color: var(--color-primary) ;
+  border: 1px solid var(--color-yellow);
+  padding: 0.75em;
+  border-radius: 5%;
+  font-size: var(--text-bot);
+}
+
+.link:hover{
+  color: var(--color-primary);
+  background-color: var(--color-yellow);
+  box-shadow: 0px 0px 6px #0008;
+}

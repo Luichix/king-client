@@ -1,0 +1,48 @@
+{
+  "es": {
+    "contact": [
+      [
+        "Dirección",
+        "DDF Hotel Glomar 3 1/2 al sur. Chinandega"
+      ],
+      [
+        "Teléfono",
+        "+505 8380-3600"
+      ],
+      [
+        "Correo",
+        "quesoselrey@gmail.com"
+      ]
+    ],
+    "form": {
+      "client": "Nombre y Apellido*",
+      "email": "Correo*",
+      "place": "Lugar de Residencia*",
+      "message": "Mensaje*",
+      "submit": "Enviar"
+    }
+  },
+  "en": {
+    "contact": [
+      [
+        "Address",
+        "DDF Hotel Glomar 3 1/2 al sur. Chinandega"
+      ],
+      [
+        "Phone",
+        "+505 8380-3600"
+      ],
+      [
+        "Email",
+        "quesoselrey@gmail.com"
+      ]
+    ],
+    "form": {
+      "client": "Name and Lastname*",
+      "email": "Email*",
+      "place": "Residence*",
+      "message": "Message*",
+      "submit": "Send"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../App.css';
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.5em 0;
+  font-size: var(--text-mid);
+}
+
+.social a {
+  color: var(--color-secundary);
+  padding: 0 0.5em;
+}
+
+.social a:hover {
+  color: var(--color-yellow);
+}

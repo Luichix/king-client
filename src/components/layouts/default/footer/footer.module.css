@@ -1,0 +1,36 @@
+@import '../App.css';
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-secundary);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2em 0;
+  box-shadow: 0px -6px 6px #0004;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--text-max);
+  line-height: 0;
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.me {
+  text-decoration: none;
+  color: var(--color-secundary);
+}
+
+.me:hover {
+  color: var(--color-yellow);
+}
