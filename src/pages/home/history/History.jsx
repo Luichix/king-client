@@ -1,9 +1,10 @@
 import React from 'react'
 import style from './history.module.css'
-import history from 'history.jpg'
-import Image from 'next/image'
+import word from '../../../data/history.json'
+import NoSsr from '../../../components/common/NoSsr'
 
-function History({ data }) {
+function History() {
+  const data = word['es']
   return (
     <section id="Nosotros" className={style.section}>
       <div className={style.gallery}>
@@ -16,11 +17,13 @@ function History({ data }) {
           ))}
         </div>
         <figure className={style.figure}>
-          <Image
-            src={history}
-            alt="quesos el rey"
-            className={style.imagen}
-          ></Image>
+          <NoSsr>
+            <img
+              src={'/history.jpg'}
+              alt="quesos el rey"
+              className={style.imagen}
+            ></img>
+          </NoSsr>
         </figure>
       </div>
     </section>

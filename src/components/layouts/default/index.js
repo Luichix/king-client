@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Header from './header'
+import Footer from './footer'
 
 export const DefaultLayout = ({ children }) => (
   <>
-    <Navbar />
+    <Header />
     <main>{children}</main>
     <Footer />
   </>

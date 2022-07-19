@@ -1,14 +1,14 @@
 import React from 'react'
-import style from './home.module.css'
-import Home from './welcome'
-import History from './history'
-import Gallery from './gallery'
-import Contact from './contact'
+import styles from './home.module.css'
+import Welcome from './welcome/Welcome'
+import History from './history/History'
+import Gallery from './gallery/Gallery'
+import Contact from './contact/Contact'
 
-const Main = () => {
+const Home = () => {
   return (
-    <div className={style.main}>
-      <Home />
+    <div className={styles.main}>
+      <Welcome />
       <History />
       <Gallery />
       <Contact />
@@ -16,4 +16,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Home

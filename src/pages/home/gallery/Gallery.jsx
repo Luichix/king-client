@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import style from './gallery.module.css'
-import queso from 'queso.jpg'
+import word from '../../../data/gallery.json'
+import NoSsr from '../../../components/common/NoSsr'
 
-function Gallery({ data }) {
+function Gallery() {
+  const data = word['en']
   return (
     <section id="Productos" className={style.section}>
       <div className={style.title}>
@@ -12,18 +13,20 @@ function Gallery({ data }) {
       </div>
       <div className={style.gallery}>
         <div className={style.data}>
-          <h3>{data.chess[0]}</h3>
-          <p>{data.chess[1]}</p>
+          <h3>{data.producto[0]}</h3>
+          <p>{data.producto[1]}</p>
           <Link href="/store">
-            <a className={style.link}>{data.chess[2]}</a>
+            <a className={style.link}>{data.producto[2]}</a>
           </Link>
         </div>
         <figure className={style.figure}>
-          <Image
-            className={style.queso}
-            src={queso}
-            alt="queso enmantado"
-          ></Image>
+          <NoSsr>
+            <img
+              className={style.queso}
+              src={'/queso.jpg'}
+              alt="queso enmantado"
+            ></img>
+          </NoSsr>
         </figure>
       </div>
     </section>

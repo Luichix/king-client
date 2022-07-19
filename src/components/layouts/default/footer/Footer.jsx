@@ -1,5 +1,5 @@
 import React from 'react'
-import Social from '../../Social'
+import Social from '../social'
 import style from './footer.module.css'
 
 function Footer() {

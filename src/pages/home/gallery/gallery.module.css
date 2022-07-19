@@ -16,7 +16,7 @@
 
 .title {
   font-size: var(--text-max);
-  color: var(--color-yellow);
+  color: var(--color-base-white);
   align-self: stretch;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .data h3 {
-  color: var(--color-yellow);
+  color: var(--color-base-white);
   font-size: var(--text-max);
 }
 
@@ -53,7 +53,7 @@
 
 .link {
   text-decoration: none;
-  color: var(--color-yellow);
+  color: var(--color-base-white);
   background-color: var(--color-primary);
   border: 1px solid var(--color-yellow);
   padding: 0.75em;
@@ -63,6 +63,6 @@
 
 .link:hover {
   color: var(--color-primary);
-  background-color: var(--color-yellow);
+  background-color: var(--color-base-white);
   box-shadow: 0px 0px 6px #0008;
 }

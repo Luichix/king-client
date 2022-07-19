@@ -4,8 +4,10 @@ import Link from 'next/link'
 import { MdAccessTimeFilled } from 'react-icons/md'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BsTelephoneFill } from 'react-icons/bs'
+import word from '../../../data/welcome.json'
 
-function Home({ data }) {
+function Welcome() {
+  const data = word['es']
   const icons = {
     0: <MdAccessTimeFilled />,
     1: <FaMapMarkerAlt />,
@@ -38,4 +40,4 @@ function Home({ data }) {
   )
 }
 
-export default Home
+export default Welcome

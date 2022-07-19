@@ -1,37 +1,65 @@
 import React from 'react'
-import style from './contact.module.css'
+import styles from './contact.module.css'
+import word from '../../../data/contact.json'
 
-function Contact({ contact, form }) {
+function Contact() {
+  const { form, contact } = word['es']
   return (
-    <section id="Contacto" className={style.section}>
-      <h2 className={style.title}>
+    <section id="Contacto" className={styles.section}>
+      <h2 className={styles.title}>
         ¡Estaremos encantados con sus comentarios!
       </h2>
-      <form className={style.form}>
-        <fieldset className={style.data}>
-          <label htmlFor="name">{form.client}</label>
-          <input id="name" type="text" autoComplete="off" required />
-          <label htmlFor="email">{form.email}</label>
-          <input id="email" type="text" autoComplete="off" required />
-          <label htmlFor="place">{form.place}</label>
-          <input id="place" type="text" autoComplete="off" required />
+      <form className={styles.form}>
+        <fieldset className={styles.data}>
+          <label className={styles.label} htmlFor="name">
+            {form.client}
+          </label>
+          <input
+            className={styles.input}
+            id="name"
+            type="text"
+            autoComplete="off"
+            required
+          />
+          <label className={styles.label} htmlFor="email">
+            {form.email}
+          </label>
+          <input
+            className={styles.input}
+            id="email"
+            type="text"
+            autoComplete="off"
+            required
+          />
+          <label className={styles.label} htmlFor="place">
+            {form.place}
+          </label>
+          <input
+            className={styles.input}
+            id="place"
+            type="text"
+            autoComplete="off"
+            required
+          />
         </fieldset>
-        <fieldset className={style.data}>
-          <label htmlFor="message">{form.message}</label>
-          <textarea id="message" required />
-          <button>{form.submit}</button>
+        <fieldset className={styles.data}>
+          <label className={styles.label} htmlFor="message">
+            {form.message}
+          </label>
+          <textarea className={styles.textarea} id="message" required />
+          <button className={styles.button}>{form.submit}</button>
         </fieldset>
       </form>
-      <hr className={style.line}></hr>
-      <div className={style.contact}>
+      <hr className={styles.line}></hr>
+      <div className={styles.contact}>
         {contact.map((e, i) => (
-          <span key={i} className={style.group}>
-            <h3 className={style.title}>{e[0]}</h3>
+          <span key={i} className={styles.group}>
+            <h3 className={styles.title}>{e[0]}</h3>
             <p>{e[1]}</p>
           </span>
         ))}
       </div>
-      <hr className={style.line}></hr>
+      <hr className={styles.line}></hr>
     </section>
   )
 }

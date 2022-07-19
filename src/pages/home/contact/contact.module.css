@@ -35,58 +35,58 @@
   align-items: flex-start;
 }
 
-.data label {
+.label {
   font-size: var(--text-bot);
   color: var(--color-yellow);
   font-weight: 500;
 }
 
-.data input,
-textarea {
+.input,
+.textarea {
   width: 300px;
   padding: 1em;
   font-size: var(--text-min);
   margin: 0 0 1em 0;
   border: 1px solid transparent;
   border-right: 3px solid var(--color-yellow);
-  border-bottom: 1px solid var(--color-secundary);
+  border-bottom: 1px solid var(--color-base-black);
   outline: none;
   text-indent: 0.5em;
-  color: var(--color-secundary);
+  color: var(--color-base-black);
   resize: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.data textarea {
+.textarea {
   height: 125px;
 }
 
-.data input:hover,
-textarea:hover {
+.input:hover,
+.textarea:hover {
   border: 0.5px solid var(--color-yellow);
   font-weight: 700;
 }
 
-.data input:focus,
-textarea:focus {
+.input:focus,
+.textarea:focus {
   border: 0.5px solid var(--color-yellow);
   font-weight: 700;
 }
 
-.data button {
+.button {
   background-color: var(--color-yellow);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  border: 1px solid var(--color-base-white);
+  color: var(--color-base-white);
   padding: 1em;
   font-size: var(--text-bot);
   border-radius: 5%;
 }
 
-.data button:hover {
-  background-color: var(--color-secundary);
-  color: var(--color-primary);
+.button:hover {
+  background-color: var(--color-base-black);
+  color: var(--color-base-white);
   cursor: pointer;
-  border: 1px solid var(--color-secundary);
+  border: 1px solid var(--color-base-black);
 }
 .contact {
   display: flex;
@@ -101,6 +101,7 @@ textarea:focus {
 }
 
 .line {
+  align-self: center;
   width: 80%;
   height: 3px;
   border: none;

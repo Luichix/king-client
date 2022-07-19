@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--color-primary);
-  color: var(--color-secundary);
+  background-color: var(--color-base-white);
+  color: var(--color-base-black);
   display: flex;
   position: sticky;
   align-items: center;

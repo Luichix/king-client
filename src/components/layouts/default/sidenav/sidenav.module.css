@@ -1,5 +1,5 @@
 .sidenav {
-  background-color: var(--color-primary);
+  background-color: var(--color-base-white);
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   top: 0;
   height: 100%;
   transition: 0.5s;
-  background-color: var(--color-primary);
+  background-color: var(--color-base-white);
 }
 
 .logo {
@@ -36,7 +36,7 @@
 
 .item {
   text-decoration: none;
-  color: var(--color-secundary);
+  color: var(--color-base-black);
   margin: var(--text-mid);
   padding: 0.2em 0.5em;
   font-size: var(--text-max);
@@ -44,13 +44,13 @@
 }
 
 .item:hover {
-  color: var(--color-primary);
+  color: var(--color-base-white);
   background-color: var(--color-yellow);
   border-radius: 5%;
 }
 
 .active {
-  color: var(--color-primary);
+  color: var(--color-base-white);
   background-color: var(--color-yellow);
   border-radius: 5%;
   transition: 0.5s;

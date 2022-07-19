@@ -1,20 +1,21 @@
 import React from 'react'
 import style from './sidenav.module.css'
 import { Link as Nav } from 'react-scroll'
-import logo from 'logo.png'
-import Social from '../../social'
-import Image from 'next/image'
+import Social from '../social'
+import NoSsr from '../../../../components/common/NoSsr'
 
 const elements = ['Inicio', 'Nosotros', 'Productos', 'Contacto']
 
 const Sidenav = ({ nav }) => {
   return (
     <div className={nav ? style.sidenav : style.none}>
-      <Image
-        src={logo}
-        className={style.logo}
-        alt="logo delicias de quesos el rey"
-      />
+      <NoSsr>
+        <img
+          src={'/logo.png'}
+          className={style.logo}
+          alt="logo delicias de quesos el rey"
+        />
+      </NoSsr>
       {elements.map((e, i) => (
         <Nav
           key={i}
